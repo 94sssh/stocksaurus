@@ -28,16 +28,20 @@
 
 ## 주요 변화
 
-[DIS](https://finance.yahoo.com/quote/DIS/) -4.46%  
-[NVDA](https://finance.yahoo.com/quote/NVDA/) -5.12%  
-[ABNB](https://finance.yahoo.com/quote/ABNB/) -13.38%  
-[SMCI](https://finance.yahoo.com/quote/SMCI/) -20.14%  
-[CVS](https://finance.yahoo.com/quote/CVS/) -3.21%  
-[NVO](https://finance.yahoo.com/quote/NVO/) -8.37%  
-[SHOP](https://finance.yahoo.com/quote/SHOP/) +17.83%  
-[LYFT](https://finance.yahoo.com/quote/LYFT/) -17.23%  
-[BA](https://finance.yahoo.com/quote/BA/) -1.09%  
-[RIVN](https://finance.yahoo.com/quote/RIVN/) -6.86%
+export const stockData = [
+  { ticker: 'DIS', rate: -4.46 },
+  { ticker: 'NVDA', rate: -5.12 },
+  { ticker: 'ABNB', rate: -13.38 },
+  { ticker: 'SMCI', rate: -20.14 },
+  { ticker: 'CVS', rate: -3.21 },
+  { ticker: 'NVO', rate: -8.37 },
+  { ticker: 'SHOP', rate: 17.83 },
+  { ticker: 'LYFT', rate: -17.23 },
+  { ticker: 'BA', rate: -1.09 },
+  { ticker: 'RIVN', rate: -6.86 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini ticker={ticker} rate={rate}></StockCardMini>)}
 
 ## 주요 지수 요약
 

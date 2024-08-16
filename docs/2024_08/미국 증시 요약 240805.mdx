@@ -35,16 +35,20 @@
 
 ## 주요 변화
 
-[NVDA](https://finance.yahoo.com/quote/NVDA/) -6.36%  
-[GOOG](https://finance.yahoo.com/quote/GOOG/) -4.61%  
-[GOOGL](https://finance.yahoo.com/quote/GOOGL/) -4.45%  
-[AAPL](https://finance.yahoo.com/quote/AAPL/) -4.82%  
-[PLTR](https://finance.yahoo.com/quote/PLTR/) -2.63%  
-[MSFT](https://finance.yahoo.com/quote/MSFT/) -3.27%  
-[TSLA](https://finance.yahoo.com/quote/TSLA/) -4.23%  
-[META](https://finance.yahoo.com/quote/META/) -2.54%  
-[AMZN](https://finance.yahoo.com/quote/AMZN/) -4.10%  
-[TSN](https://finance.yahoo.com/quote/TSN/) +2.09%
+export const stockData = [
+  { ticker: 'NVDA', rate: -6.36 },
+  { ticker: 'GOOG', rate: -4.61 },
+  { ticker: 'GOOGL', rate: -4.45 },
+  { ticker: 'AAPL', rate: -4.82 },
+  { ticker: 'PLTR', rate: -2.63 },
+  { ticker: 'MSFT', rate: -3.27 },
+  { ticker: 'TSLA', rate: -4.23 },
+  { ticker: 'META', rate: -2.54 },
+  { ticker: 'AMZN', rate: -4.1 },
+  { ticker: 'TSN', rate: 2.09 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini ticker={ticker} rate={rate}></StockCardMini>)}
 
 ## 주요 지수 요약
 

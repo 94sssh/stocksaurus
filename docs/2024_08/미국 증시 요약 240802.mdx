@@ -28,16 +28,20 @@
 
 ## 주요 변화
 
-[AMZN](https://finance.yahoo.com/quote/AMZN/) -8.78%  
-[INTC](https://finance.yahoo.com/quote/INTC/) -26.06%  
-[NVDA](https://finance.yahoo.com/quote/NVDA/) -1.78%  
-[AAPL](https://finance.yahoo.com/quote/AAPL/) +0.69%  
-[GOOG](https://finance.yahoo.com/quote/GOOG/) -2.35%  
-[GOOGL](https://finance.yahoo.com/quote/GOOGL/) -2.40%  
-[MSFT](https://finance.yahoo.com/quote/MSFT/) -2.07%  
-[AMD](https://finance.yahoo.com/quote/AMD/) -0.03%  
-[CVX](https://finance.yahoo.com/quote/CVX/) -2.67%  
-[XOM](https://finance.yahoo.com/quote/XOM/) -0.06%
+export const stockData = [
+  { ticker: 'AMZN', rate: -8.78 },
+  { ticker: 'INTC', rate: -26.06 },
+  { ticker: 'NVDA', rate: -1.78 },
+  { ticker: 'AAPL', rate: 0.69 },
+  { ticker: 'GOOG', rate: -2.35 },
+  { ticker: 'GOOGL', rate: -2.4 },
+  { ticker: 'MSFT', rate: -2.07 },
+  { ticker: 'AMD', rate: -0.03 },
+  { ticker: 'CVX', rate: -2.67 },
+  { ticker: 'XOM', rate: -0.06 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini ticker={ticker} rate={rate}></StockCardMini>)}
 
 ## 주요 지수 요약
 
