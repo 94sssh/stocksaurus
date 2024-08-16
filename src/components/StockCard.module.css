@@ -1,0 +1,32 @@
+.stock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 8.5rem;
+  padding: 0.375rem;
+  border: 1px solid #f2f2f2;
+  border-radius: 0.5rem;
+  background-color: #1c1c1c;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.ticker {
+  font-weight: 500;
+  color: #f9f8fd;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f9f8fd;
+}
+
+.gainer {
+  color: #16db65;
+}
+
+.loser {
+  color: #ff000d;
+}
