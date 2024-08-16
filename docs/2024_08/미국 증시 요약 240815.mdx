@@ -28,16 +28,20 @@
 
 ## 주요 변화
 
-[WMT](https://finance.yahoo.com/quote/WMT/) 6.58%  
-[NVDA](https://finance.yahoo.com/quote/NVDA/) 4.05%  
-[GOOGL](https://finance.yahoo.com/quote/GOOGL/) 0.58%  
-[ULTA](https://finance.yahoo.com/quote/ULTA/) 11.17%  
-[CSCO](https://finance.yahoo.com/quote/CSCO/) 6.80%  
-[GOOG](https://finance.yahoo.com/quote/GOOG/) 0.70%  
-[AAPL](https://finance.yahoo.com/quote/AAPL/) 1.35%  
-[BABA](https://finance.yahoo.com/quote/BABA/) 0.09%  
-[AMZN](https://finance.yahoo.com/quote/AMZN/) 4.40%  
-[NKE](https://finance.yahoo.com/quote/NKE/) 5.07%
+export const stockData = [
+  { ticker: 'WMT', rate: 6.58 },
+  { ticker: 'NVDA', rate: 4.05 },
+  { ticker: 'GOOGL', rate: 0.58 },
+  { ticker: 'ULTA', rate: 11.17 },
+  { ticker: 'CSCO', rate: 6.8 },
+  { ticker: 'GOOG', rate: 0.7 },
+  { ticker: 'AAPL', rate: 1.35 },
+  { ticker: 'BABA', rate: 0.09 },
+  { ticker: 'AMZN', rate: 4.4 },
+  { ticker: 'NKE', rate: 5.07 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
 
 ## 주요 지수 요약
 
