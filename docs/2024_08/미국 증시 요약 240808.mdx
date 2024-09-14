@@ -54,7 +54,7 @@ export const stockData = [
   { ticker: 'BMBL', rate: 18.34 },
 ];
 
-{stockData.map(({ticker, rate}) => <StockCardMini ticker={ticker} rate={rate}></StockCardMini>)}
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
 
 ## 주요 지수 요약
 

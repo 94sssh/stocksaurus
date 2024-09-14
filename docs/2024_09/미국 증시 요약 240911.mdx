@@ -49,7 +49,7 @@ export const stockData = [
   { ticker: 'MSFT', rate: 2.13 },
 ];
 
-{stockData.map(({ticker, rate}) => <StockCardMini ticker={ticker} rate={rate}></StockCardMini>)}
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
 
 ## 주요 지수 요약
 
