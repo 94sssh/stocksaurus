@@ -15,11 +15,9 @@ const StockCardMini = ({ ticker, price, rate }: StockProps) => {
       rel='noreferrer'
     >
       <span className={style.ticker}>{ticker}</span>
-      {price && (
-        <span className={style.price}>{price.toFixed(2).toLocaleString()}</span>
-      )}
+      {price && <span className={style.price}>{price.toLocaleString()}</span>}
       <span className={style[rate >= 0 ? 'gainer' : 'loser']}>
-        {rate >= 0 ? '▲' : '▼'} {rate}%
+        {rate >= 0 ? '▲' : '▼'} {rate.toFixed(2)}%
       </span>
     </a>
   );

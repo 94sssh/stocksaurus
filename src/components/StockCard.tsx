@@ -18,7 +18,7 @@ const StockCard = ({ ticker, price, rate }: StockProps) => {
       <div className={style.wrapper}>
         <span>{price.toLocaleString()}</span>
         <span className={style[rate >= 0 ? 'gainer' : 'loser']}>
-          {rate >= 0 ? '▲' : '▼'} {rate}%
+          {rate >= 0 ? '▲' : '▼'} {rate.toFixed(2)}%
         </span>
       </div>
     </a>
