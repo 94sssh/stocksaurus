@@ -62,7 +62,7 @@ const config: Config = {
           position: 'left',
           label: 'News',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        // { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/94sssh',
           label: 'GitHub',
