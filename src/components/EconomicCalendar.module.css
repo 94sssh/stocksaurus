@@ -5,7 +5,7 @@
   border: 1px solid #e7e7e7;
 }
 
-.row {
+.headRow {
   flex: 1;
   display: flex;
   border: none;
@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 640px) {
-  .row {
+  .headRow {
     font-size: 12px;
 
     > th,

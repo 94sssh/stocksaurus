@@ -6,7 +6,7 @@ const EconomicCalendar = ({ data }) => {
   return (
     <table className={style.container}>
       <thead>
-        <tr className={style.row}>
+        <tr className={style.headRow}>
           {headCategory.map((category) => (
             <th key={category}>{category}</th>
           ))}
@@ -14,7 +14,7 @@ const EconomicCalendar = ({ data }) => {
       </thead>
       <tbody>
         {data.map((item) => (
-          <tr key={item.event} className={style.row}>
+          <tr key={item.event} className={style.headRow}>
             {item.map((el) => (
               <td>{el}</td>
             ))}
