@@ -88,10 +88,12 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|             이벤트             | 중요도 | 실제 | 예측 | 이전 |
-| :----------------------------: | :----: | :--: | :--: | :--: |
-| 미시간대 소비자심리지수 (11월) |  ⭐⭐  | 73.0 | 71.0 | 70.5 |
-|     연준 보우먼 이사 연설      |  ⭐⭐  |      |      |      |
+export const eventsData = [
+  ['미시간대 소비자심리지수 (11월)', '🟨', '73.0', '71.0', '70.5'],
+  ['연준 보우먼 이사 연설', '🟨', '', '', ''],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 실적 발표 예정 (241111)
 
@@ -99,4 +101,8 @@ export const stockData = [
 
 라이브 네이션 엔터테인먼트(LYV)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

@@ -92,17 +92,19 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|        이벤트         | 중요도 | 실제 | 예측 | 이전 |
-| :-------------------: | :----: | :--: | :--: | :--: |
-| 연준 굴스비 총재 연설 |  ⭐⭐  |      |      |      |
+export const eventsData = [['연준 굴스비 총재 연설', '🟨', '', '', '']];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (241119)
 
-|       이벤트        | 중요도 |  예측  |  이전   |
-| :-----------------: | :----: | :----: | :-----: |
-| 건축승인건수 (10월) |  ⭐⭐  | 1.440M | 1.425M  |
-| 주택착공건수 (10월) |  ⭐⭐  | 1.340M | 1.353M  |
-| API 주간 원유 재고  |   ⭐   | 0.800M | -0.777M |
+export const nextEventsData = [
+  ['건축승인건수 (10월)', '🟨', '', '1.440M', '1.425M'],
+  ['주택착공건수 (10월)', '🟨', '', '1.340M', '1.353M'],
+  ['API 주간 원유 재고', '🟩', '', '0.800M', '-0.777M'],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (241119)
 
@@ -117,4 +119,8 @@ export const stockData = [
 
 키사이트 테크놀로지스(KEYS)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

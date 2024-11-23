@@ -88,12 +88,14 @@ export const stockData = [
 
 ## 다가오는 주요 경제 일정 (241112)
 
-|         이벤트          | 중요도 | 예측 | 이전 |
-| :---------------------: | :----: | :--: | :--: |
-|   연준 월러 이사 연설   |  ⭐⭐  |      |      |
-|   연준 바킨 총재 연설   |  ⭐⭐  |      |      |
-| 연준 카시카리 총재 연설 |  ⭐⭐  |      |      |
-|   연준 하커 총재 연설   |  ⭐⭐  |      |      |
+export const nextEventsData = [
+  ['연준 월러 이사 연설', '🟨', '', '', ''],
+  ['연준 바킨 총재 연설', '🟨', '', '', ''],
+  ['연준 카시카리 총재 연설', '🟨', '', '', ''],
+  ['연준 하커 총재 연설', '🟨', '', '', ''],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (241112)
 
@@ -110,4 +112,8 @@ export const stockData = [
 옥시덴털 페트롤리움(OXY)  
 스카이웍스 솔루션스(SWKS)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
