@@ -48,7 +48,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/stocksaurus-social-card.jpg',
+    image: 'img/stocksaurus-social-card.png',
     navbar: {
       title: 'StockSaurus',
       logo: {
