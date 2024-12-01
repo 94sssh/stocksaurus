@@ -53,7 +53,7 @@ const config: Config = {
       title: 'StockSaurus',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/stocksaurus.png',
       },
       items: [
         {
