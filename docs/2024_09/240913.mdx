@@ -92,16 +92,24 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|            이벤트             | 중요도 | 실제  | 예측  | 이전 |
-| :---------------------------: | :----: | :---: | :---: | :--: |
-| 미시간대 소비자심리지수 (9월) |  ⭐⭐  | 69.0  | 68.3  | 67.9 |
-|   수출물가지수 (MoM) (8월)    |  ⭐⭐  | -0.7% | -0.1% | 0.5% |
-|   수입물가지수 (MoM) (8월)    |  ⭐⭐  | -0.3% | -0.2% | 0.1% |
+export const eventsData = [
+  ['미시간대 소비자심리지수 (9월)', '🟨', '69.0', '68.3', '67.9'],
+  ['수출물가지수 (MoM) (8월)', '🟨', '-0.7%', '-0.1%', '0.7%'],
+  ['수입물가지수 (MoM) (8월)', '🟨', '-0.3%', '-0.2%', '0.1%'],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240916)
 
-|                 이벤트                  | 중요도 | 예측  | 이전  |
-| :-------------------------------------: | :----: | :---: | :---: |
-| 뉴욕 엠파이어스테이트 제조업 지수 (9월) |  ⭐⭐  | -3.90 | -4.70 |
+export const nextEventsData = [
+  ['뉴욕 엠파이어스테이트 제조업 지수 (9월)', '🟨', '', '-3.90', '-4.70'],
+];
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+<EconomicCalendar data={nextEventsData} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

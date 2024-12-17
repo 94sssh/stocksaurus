@@ -88,17 +88,23 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|       이벤트        | 중요도 | 실제 | 예측 | 이전 |
-| :-----------------: | :----: | :--: | :--: | :--: |
-| 연준 하커 총재 연설 |  ⭐⭐  |      |      |      |
+export const eventsData = [['연준 하커 총재 연설', '🟨', '', '', '']];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240923)
 
-|           이벤트            | 중요도 | 예측 | 이전 |
-| :-------------------------: | :----: | :--: | :--: |
-| S&P 글로벌 제조업 PMI (8월) | ⭐⭐⭐ | 48.5 | 47.9 |
-| S&P 글로벌 서비스 PMI (8월) |  ⭐⭐  | 55.2 | 55.7 |
-|  S&P 글로벌 종합 PMI (8월)  |  ⭐⭐  |      | 54.6 |
-|    연준 보스틱 총재 연설    |  ⭐⭐  |      |      |
+export const nextEventsData = [
+  ['S&P 글로벌 제조업 PMI (8월)', '🟥', '', '48.5', '47.9'],
+  ['S&P 글로벌 서비스 PMI (8월)', '🟨', '', '55.2', '55.7'],
+  ['S&P 글로벌 종합 PMI (8월)', '🟨', '', '54.3', '54.6'],
+  ['연준 보스틱 총재 연설', '🟨', '', '', ''],
+];
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+<EconomicCalendar data={nextEventsData} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
