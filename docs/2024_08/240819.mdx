@@ -89,18 +89,22 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|          이벤트           | 중요도 |   실제   | 예측  | 이전  |
-| :-----------------------: | :----: | :------: | :---: | :---: |
-|    연준 월러 이사 연설    |  ⭐⭐  |          |       |       |
-| 미국 선행지수 (MoM) (7월) |  ⭐⭐  | -0.6%(▼) | -0.3% | -0.2% |
+export const eventsData = [
+  ['연준 월러 이사 연설', '🟨', '', '', ''],
+  ['미국 선행지수 (MoM) (7월)', '🟨', '-0.6%', '-0.3%', '-0.2%'],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240820)
 
-|        이벤트         | 중요도 | 예측  |  이전   |
-| :-------------------: | :----: | :---: | :-----: |
-| 연준 보스틱 총재 연설 |  ⭐⭐  |       |         |
-|  연준 바 부의장 연설  |  ⭐⭐  |       |         |
-|  API 주간 원유 재고   |   ⭐   | -2.8M | -5.205M |
+export const nextEventsData = [
+  ['연준 보스틱 총재 연설', '🟨', '', '', ''],
+  ['연준 바 부의장 연설', '🟨', '', '', ''],
+  ['API 주간 원유 재고', '🟩', '', '-2.8M', '-5.205M'],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (240820)
 
@@ -115,4 +119,8 @@ export const stockData = [
 잭 헨리 & 어소시에이츠(JKHY)  
 파그세구로 디지털(PAGS)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

@@ -88,16 +88,20 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|          이벤트           | 중요도 | 실제 | 예측 | 이전 |
-| :-----------------------: | :----: | :--: | :--: | :--: |
-|  베이커 휴즈 굴착장비수   |   ⭐   | 485  |      | 482  |
-| 베이커 휴즈 총 원유시추수 |   ⭐   | 588  |      | 586  |
+export const eventsData = [
+  ['베이커 휴즈 굴착장비수', '🟩', '485', '', '482'],
+  ['베이커 휴즈 총 원유시추수', '🟩', '588', '', '586'],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240812)
 
-|       이벤트        | 중요도 |  예측   |  이전  |
-| :-----------------: | :----: | :-----: | :----: |
-| 연방 재정수지 (7월) |  ⭐⭐  | -254.3B | -66.0B |
+export const nextEventsData = [
+  ['연방 재정수지 (7월)', '🟨', '', '-254.3B', '-66.0B'],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (240812)
 
@@ -111,4 +115,8 @@ export const stockData = [
 럼블(RUM)  
 테라울프(WULF)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

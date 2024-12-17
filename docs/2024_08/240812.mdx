@@ -98,17 +98,21 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|       이벤트        | 중요도 |    실제    |  예측   |  이전  |
-| :-----------------: | :----: | :--------: | :-----: | :----: |
-| 연방 재정수지 (7월) |  ⭐⭐  | -244.0B(▲) | -254.3B | -66.0B |
+export const eventsData = [
+  ['연방 재정수지 (7월)', '🟨', '-244.0B', '-254.3B', '-66.0B'],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240813)
 
-|                 이벤트                  | 중요도 | 예측 | 이전 |
-| :-------------------------------------: | :----: | :--: | :--: |
-|      생산자물가지수(PPI) MoM (7월)      | ⭐⭐⭐ | 0.2% | 0.2% |
-| 근원 생산자물가지수(Core PPI) MoM (7월) |  ⭐⭐  | 0.2% | 0.3% |
-|          연준 보스틱 총재 연설          |  ⭐⭐  |      |      |
+export const nextEventsData = [
+  ['생산자물가지수(PPI) MoM (7월)', '🟥', '', '0.2%', '0.2%'],
+  ['근원 생산자물가지수(Core PPI) MoM (7월)', '🟨', '', '0.2%', '0.3%'],
+  ['연준 보스틱 총재 연설', '🟨', '', '', ''],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (240813)
 
@@ -120,4 +124,8 @@ export const stockData = [
 
 머큐리 시스템즈(MRCY)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

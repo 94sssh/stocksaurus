@@ -89,18 +89,22 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|               이벤트                | 중요도 |   실제    |  예측   |  이전   |
-| :---------------------------------: | :----: | :-------: | :-----: | :-----: |
-| 연방공개시장위원회 데일리 총재 연설 |  ⭐⭐  |           |         |         |
-|           무역수지 (6월)            |  ⭐⭐  | -73.1B(▼) | -72.50B | -75.10B |
+export const eventsData = [
+  ['연방공개시장위원회 데일리 총재 연설', '🟨', '', '', ''],
+  ['무역수지 (6월)', '🟨', '-73.1B', '-72.50B', '-75.10B'],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240807)
 
-|      이벤트       | 중요도 |  예측   |  이전   |
-| :---------------: | :----: | :-----: | :-----: |
-|   EIA 원유재고    | ⭐⭐⭐ | -1.600M | -3.436M |
-| 10년물 국채 입찰  | ⭐⭐⭐ |         | 4.276%  |
-| 소비자 신용 (6월) |   ⭐   |  9.80B  | 13.95B  |
+export const nextEventsData = [
+  ['EIA 원유재고', '🟥', '', '-1.600M', '-3.436M'],
+  ['10년물 국채 입찰', '🟥', '', '', '4.276%'],
+  ['소비자 신용 (6월)', '🟩', '', '9.80B', '13.95B'],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (240807)
 
@@ -128,4 +132,8 @@ CVS 헬스(CVS)
 콜페이(CPAY)  
 마라톤 오일(MRO)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::

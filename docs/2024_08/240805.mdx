@@ -96,18 +96,22 @@ export const stockData = [
 
 ## 지난 주요 경제 일정
 
-|           이벤트            | 중요도 |  실제   | 예측 | 이전 |
-| :-------------------------: | :----: | :-----: | :--: | :--: |
-|  S&P 글로벌 종합 PMI (7월)  |  ⭐⭐  | 54.3(▼) | 55.0 | 54.8 |
-| S&P 글로벌 서비스 PMI (7월) |  ⭐⭐  | 55.0(▼) | 56.0 | 55.3 |
-|    ISM 서비스 PMI (7월)     | ⭐⭐⭐ |  51.4   | 51.4 | 48.8 |
+export const eventsData = [
+  ['ISM 서비스 PMI (7월)', '🟥', '51.4', '51.4', '48.8'],
+  ['S&P 글로벌 종합 PMI (7월)', '🟨', '54.3', '55.0', '54.8'],
+  ['S&P 글로벌 서비스 PMI (7월)', '🟨', '55.0', '56.0', '55.3'],
+];
+
+<EconomicCalendar data={eventsData} />
 
 ## 다가오는 주요 경제 일정 (240806)
 
-|               이벤트                | 중요도 |  예측   |  이전   |
-| :---------------------------------: | :----: | :-----: | :-----: |
-| 연방공개시장위원회 데일리 총재 연설 |  ⭐⭐  |         |         |
-|           무역수지 (6월)            |  ⭐⭐  | -72.50B | -75.10B |
+export const nextEventsData = [
+  ['연방공개시장위원회 데일리 총재 연설', '🟨', '', '', ''],
+  ['무역수지 (6월)', '🟨', '', '-72.50B', '-75.10B'],
+];
+
+<EconomicCalendar data={nextEventsData} />
 
 ## 실적 발표 예정 (240806)
 
@@ -134,4 +138,8 @@ export const stockData = [
 포티넷(FTNT)  
 슈퍼 마이크로 컴퓨터(SMCI)
 
-- Sources: CNBC, Yahoo Finance, Reuters, MarketWatch, Investing.com, Finviz, Bloomberg, ...
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
