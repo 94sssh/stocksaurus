@@ -43,16 +43,16 @@ slug: 16
 ## 주요 변화
 
 export const stockData = [
-  { ticker: 'COST', rate: -0.63 },
-  { ticker: 'NVDA', rate: -1.41 },
-  { ticker: 'GOOGL', rate: -1.76 },
-  { ticker: 'AVGO', rate: -1.39 },
-  { ticker: 'GOOG', rate: -1.57 },
-  { ticker: 'ADBE', rate: -13.69 },
-  { ticker: 'MSFT', rate: 0.13 },
-  { ticker: 'TSLA', rate: -1.57 },
-  { ticker: 'AAPL', rate: 0.6 },
-  { ticker: 'AMZN', rate: -0.56 },
+  { ticker: 'TSLA', rate: 6.14 },
+  { ticker: 'NVDA', rate: -1.68 },
+  { ticker: 'GME', rate: 5.18 },
+  { ticker: 'IONQ', rate: 23.59 },
+  { ticker: 'GOOG', rate: 3.54 },
+  { ticker: 'AMZN', rate: 2.4 },
+  { ticker: 'AVGO', rate: 11.21 },
+  { ticker: 'SOFI', rate: 3.88 },
+  { ticker: 'SOUN', rate: 16.44 },
+  { ticker: 'CVS', rate: -5.61 },
 ];
 
 {stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
