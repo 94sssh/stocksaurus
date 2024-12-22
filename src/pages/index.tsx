@@ -12,8 +12,9 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className='container'>
+        <img className={styles.logo} src='img/logo.png' alt='logo' />
         <Heading as='h1' className='hero__title'>
-          {siteConfig.title}
+          스톡사우루스
         </Heading>
         <p className='hero__subtitle'>{siteConfig.tagline}</p>
         <div className={styles.buttons}>

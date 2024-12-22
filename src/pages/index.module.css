@@ -16,6 +16,10 @@
   }
 }
 
+.logo {
+  width: 4rem;
+}
+
 .buttons {
   display: flex;
   align-items: center;
