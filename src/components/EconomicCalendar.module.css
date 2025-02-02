@@ -13,7 +13,7 @@
 }
 
 .row :nth-child(1) {
-  flex: 5;
+  flex: 4;
   justify-content: flex-start;
 }
 
@@ -26,7 +26,7 @@
 .row :nth-child(n + 3) {
   flex: 1;
   max-width: 5rem;
-  min-width: 3rem;
+  min-width: 3.25rem;
 }
 
 .th {
