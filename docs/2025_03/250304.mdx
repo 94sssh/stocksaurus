@@ -51,16 +51,16 @@ S&P 500은 화요일의 변동성 높은 거래 세션에서 캐나다, 멕시�
 ## 주요 변화
 
 export const stockData = [
-  { ticker: "NVDA", rate: 1.69 },
-  { ticker: "GNW", rate: -3.91 },
-  { ticker: "TGT", rate: -3.0 },
-  { ticker: "BBY", rate: -13.3 },
-  { ticker: "TSLA", rate: -4.43 },
-  { ticker: "AAPL", rate: -0.88 },
-  { ticker: "OKTA", rate: 24.27 },
-  { ticker: "WBA", rate: 5.6 },
-  { ticker: "AMZN", rate: -0.6 },
-  { ticker: "TSM", rate: 4.06 },
+  { ticker: 'NVDA', rate: 1.69 },
+  { ticker: 'GNW', rate: -3.91 },
+  { ticker: 'TGT', rate: -3.0 },
+  { ticker: 'BBY', rate: -13.3 },
+  { ticker: 'TSLA', rate: -4.43 },
+  { ticker: 'AAPL', rate: -0.88 },
+  { ticker: 'OKTA', rate: 24.27 },
+  { ticker: 'WBA', rate: 5.6 },
+  { ticker: 'AMZN', rate: -0.6 },
+  { ticker: 'TSM', rate: 4.06 },
 ];
 
 {stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
@@ -97,9 +97,9 @@ export const stockData = [
 ## 지난 주요 경제 일정
 
 export const eventsData = [
-  ["트럼프 대통령 연설", "🟥", "", "", ""],
-  ["연준 윌리엄스 총재 연설", "🟨", "", "", ""],
-  ["API 주간 원유 재고", "🟩", "-1.455M", "-0.300M", "-0.640M"],
+  ['트럼프 대통령 연설', '🟥', '', '', ''],
+  ['연준 윌리엄스 총재 연설', '🟨', '', '', ''],
+  ['API 주간 원유 재고', '🟩', '-1.455M', '-0.300M', '-0.640M'],
 ];
 
 <EconomicCalendar data={eventsData} />
@@ -107,13 +107,13 @@ export const eventsData = [
 ## 다가오는 주요 경제 일정 (250305)
 
 export const nextEventsData = [
-  ["ADP 비농업 고용변화 (2월)", "🟥", "", "144K", "183K"],
-  ["S&P 글로벌 서비스 PMI", "🟥", "", "49.7", "52.9"],
-  ["ISM 서비스 PMI (2월)", "🟥", "", "53.0", "52.8"],
-  ["EIA 원유재고", "🟥", "", "", "-2.332M"],
-  ["S&P 글로벌 종합 PMI", "🟨", "", "50.4", "52.7"],
-  ["공장수주 (MoM) (1월)", "🟨", "", "1.5%", "-0.9%"],
-  ["연준 베이지북", "🟨", "", "", ""],
+  ['ADP 비농업 고용변화 (2월)', '🟥', '', '141K', '186K'],
+  ['S&P 글로벌 서비스 PMI', '🟥', '', '49.7', '52.9'],
+  ['ISM 서비스 PMI (2월)', '🟥', '', '52.5', '52.8'],
+  ['EIA 원유재고', '🟥', '', '0.600M', '-2.332M'],
+  ['S&P 글로벌 종합 PMI', '🟨', '', '50.4', '52.7'],
+  ['공장수주 (MoM) (1월)', '🟨', '', '1.7%', '-0.6%'],
+  ['연준 베이지북', '🟨', '', '', ''],
 ];
 
 <EconomicCalendar data={nextEventsData} />
