@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className='button button--secondary button--lg'
-            to='/docs/2025_03/11'
+            to='/docs/2025_03/12'
           >
             증시 요약 보기
           </Link>
@@ -30,7 +30,7 @@ function HomepageHeader() {
   );
 }
 
-export default function Home(): JSX.Element {
+export default function Home() {
   return (
     <Layout
       title='스톡사우루스'
