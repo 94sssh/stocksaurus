@@ -20,7 +20,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className='button button--secondary button--lg'
-            to='/docs/2025_03/17'
+            to='/docs/2025_03/18'
           >
             증시 요약 보기
           </Link>
