@@ -203,7 +203,7 @@ export const ticker: Record<string, { company: string; country: string }> = {
   GD: { company: '제너럴 다이내믹스', country: '' },
   BDX: { company: '벡톤 디킨슨', country: '' },
   EMR: { company: '에머슨 일렉트릭', country: '' },
-  CL: { company: '콜게이트 팜올리브', country: '' },
+  CL: { company: '콜게이트-팜올리브', country: '' },
   ECL: { company: '이콜랩', country: '' },
   CVS: { company: 'CVS 헬스', country: '' },
   MFG: { company: '미즈호 파이낸셜 그룹', country: 'JP' },
