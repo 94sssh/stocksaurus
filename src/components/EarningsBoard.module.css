@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  /* max-width: 38rem; */
+  margin-bottom: 2.5rem;
   border: 1px solid #e7e7e7;
   border-radius: 0.5rem;
 
