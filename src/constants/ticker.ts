@@ -156,7 +156,7 @@ export const ticker: Record<string, { company: string; country: string }> = {
   BUD: { company: '앤하이저부시 인베브', country: 'BE' },
   HCA: { company: 'HCA 헬스케어', country: '' },
   INTC: { company: '인텔', country: '' },
-  MSTR: { company: '마이크로스트래티지', country: '' },
+  MSTR: { company: '스트래티지', country: '' },
   TEAM: { company: '아틀라시안', country: '' },
   APH: { company: '암페놀', country: '' },
   SAN: { company: '방코 산탄데르', country: 'ES' },
