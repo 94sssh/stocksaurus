@@ -1,26 +1,20 @@
 import style from './StockCard.module.css';
+import { ticker } from '../constants/ticker';
 
 interface StockProps {
-  ticker: string;
-  price: number;
-  rate: number;
+  stock: string;
 }
 
-const StockCard = ({ ticker, price, rate }: StockProps) => {
+const StockCard = ({ stock }: StockProps) => {
   return (
     <a
-      href={`https://finance.yahoo.com/quote/${ticker}`}
+      href={`https://finance.yahoo.com/quote/${stock}`}
       className={style.stock}
       target='_blank'
       rel='noreferrer'
     >
-      <span className={style.ticker}>{ticker}</span>
-      <div className={style.wrapper}>
-        <span>{price.toLocaleString()}</span>
-        <span className={style[rate >= 0 ? 'gainer' : 'loser']}>
-          {rate >= 0 ? '▲' : '▼'} {rate.toFixed(2)}%
-        </span>
-      </div>
+      <span className={style.ticker}>{stock}</span>
+      <span className={style.name}>{ticker[stock].company}</span>
     </a>
   );
 };
