@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  /* max-width: 38rem; */
+  border: 1px solid #e7e7e7;
+  border-radius: 0.5rem;
+
+  @media screen and (max-width: 996px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    border: none;
+  }
+}
+
+.wrapper {
+  width: 100%;
+
+  @media screen and (max-width: 996px) {
+    border: 1px solid #e7e7e7;
+    border-radius: 0.5rem;
+  }
+}
+
+.title {
+  display: block;
+  padding: 0.25rem;
+  color: #444950;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}

@@ -3,6 +3,7 @@ import {
   StockCard,
   StockCardMini,
   EconomicCalendar,
+  EarningsBoard,
 } from '@site/src/components';
 import { TickerTape, TickerWidget } from '@site/src/components/widget';
 
@@ -11,6 +12,7 @@ export default {
   StockCard,
   StockCardMini,
   EconomicCalendar,
+  EarningsBoard,
   TickerTape,
   TickerWidget,
 };
