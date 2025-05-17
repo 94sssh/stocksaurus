@@ -3,8 +3,8 @@ import style from './EarningsBoard.module.css';
 import StockCard from './StockCard';
 
 interface EarningsBoardProps {
-  stocksBMO: string[];
-  stocksAMC: string[];
+  stocksBMO?: string[];
+  stocksAMC?: string[];
 }
 
 const EarningsBoard = ({ stocksBMO, stocksAMC }: EarningsBoardProps) => {
@@ -12,19 +12,27 @@ const EarningsBoard = ({ stocksBMO, stocksAMC }: EarningsBoardProps) => {
     <div className={style.container}>
       <div className={style.wrapper}>
         <span className={style.title}>개장 전</span>
-        <div className={style.board}>
-          {stocksBMO.map((stock) => (
-            <StockCard key={stock} stock={stock} />
-          ))}
-        </div>
+        {stocksBMO ? (
+          <div className={style.board}>
+            {stocksBMO.map((stock) => (
+              <StockCard key={stock} stock={stock} />
+            ))}
+          </div>
+        ) : (
+          <div className={style.empty}>발표 없음</div>
+        )}
       </div>
       <div className={style.wrapper}>
         <span className={style.title}>마감 후</span>
-        <div className={style.board}>
-          {stocksAMC.map((stock) => (
-            <StockCard key={stock} stock={stock} />
-          ))}
-        </div>
+        {stocksAMC ? (
+          <div className={style.board}>
+            {stocksAMC.map((stock) => (
+              <StockCard key={stock} stock={stock} />
+            ))}
+          </div>
+        ) : (
+          <div className={style.empty}>발표 없음</div>
+        )}
       </div>
     </div>
   );
