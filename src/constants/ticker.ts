@@ -651,7 +651,7 @@ export const ticker: Record<string, { company: string; country: string }> = {
   ALGN: { company: '얼라인 테크놀로지', country: '' },
   AU: { company: '앵글로골드 아샨티', country: 'GB' },
   SUI: { company: '선 커뮤니티즈', country: '' },
-  HRL: { company: '호멜 푸즈', country: '' },
+  HRL: { company: '호멜 푸드', country: '' },
   BAX: { company: '박스터 인터내셔널', country: '' },
   DG: { company: '달러 제네럴', country: '' },
   FNF: { company: '피델리티 내셔널 파이낸셜', country: '' },
