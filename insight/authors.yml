@@ -1,0 +1,95 @@
+BLK:
+  name: BlackRock
+  title: Weekly commentary
+  url: https://www.blackrock.com/corporate/insights/blackrock-investment-institute/archives
+  image_url: /icon/blk.svg
+
+BLK_O:
+  name: BlackRock
+  title: Investment outlook
+  url: https://www.blackrock.com/corporate/insights/blackrock-investment-institute/archives#investment-outlook
+  image_url: /icon/blk.svg
+
+Vanguard:
+  name: Vanguard
+  title: Vanguard research
+  url: https://corporate.vanguard.com/content/corporatesite/us/en/corp/what-we-think/investing-insights/research-library.html
+  image_url: /icon/vanguard.svg
+
+STT:
+  name: State Street
+  title: Weekly Market Update
+  url: https://www.ssga.com/us/en/individual/insights?g=series:weekly-market-update
+  image_url: /icon/stt.svg
+
+STT_W:
+  name: State Street
+  title: Weekly Economic Perspectives
+  url: https://www.ssga.com/us/en/individual/insights?g=series:weekly-economic-perspectives
+  image_url: /icon/stt.svg
+
+STT_Q:
+  name: State Street
+  title: Quarterly Forecasts
+  url: https://www.ssga.com/us/en/individual/insights?g=series:quarterly-forecasts
+  image_url: /icon/stt.svg
+
+JPM:
+  name: JPMorgan
+  title: Global Research
+  url: https://www.jpmorgan.com/insights/research#latest-research
+  image_url: /icon/jpm.png
+
+MS:
+  name: Morgan Stanley
+  title: Global Equity Observer
+  url: https://www.morganstanley.com/im/en-us/individual-investor/insights/series/global-equity-observer.html
+  image_url: /icon/ms.png
+
+MS_B:
+  name: Morgan Stanley
+  title: The BEAT
+  url: https://www.morganstanley.com/im/en-us/individual-investor/insights/series/beat.html
+  image_url: /icon/ms.png
+
+GS:
+  name: Goldman Sachs
+  title: Goldman Sachs Research
+  url: https://www.goldmansachs.com/insights/reports
+  image_url: /icon/gs.svg
+
+BAC:
+  name: Bank of America
+  title: Market Updates
+  url: https://www.privatebank.bankofamerica.com/articles/market-update.html
+  image_url: /icon/bac.svg
+
+WFC:
+  name: Wells Fargo
+  title: Weekly Economic and Financial Commentary
+  url: https://www.wellsfargo.com/cib/insights/economics/weekly-commentary/
+  image_url: /icon/wfc.png
+
+WFC_O:
+  name: Wells Fargo
+  title: U.S. Economic Outlook
+  url: https://www.wellsfargo.com/cib/insights/economics/us-outlook/
+  image_url: /icon/wfc.png
+
+C:
+  name: Citi
+  title: Weekly Market Update
+  url: https://marketinsights.citi.com/Market-Commentary/Weekly-Market-Update/index.html
+  image_url: /icon/c.svg
+
+C_Q:
+  name: Citi
+  title: Quarterly Market Update
+  url: https://marketinsights.citi.com/Market-Commentary/Quarterly-Market-Update/index.html
+  image_url: /icon/c.svg
+
+C_Y:
+  name: Citi
+  title: Wealth Outlook
+  url: https://marketinsights.citi.com/Market-Commentary/Wealth-Outlook/index.html
+  image_url: /icon/c.svg
