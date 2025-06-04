@@ -727,7 +727,7 @@ export const ticker: Record<string, { company: string; country: string }> = {
   HST: { company: '호스트 호텔 앤 리조트', country: '' },
   UHS: { company: '유니버셜 헬스 서비스', country: '' },
   ALLE: { company: '얼리젼', country: 'IE' },
-  CPB: { company: '캠벨스', country: '' },
+  CPB: { company: '캠벨', country: '' },
   SJM: { company: 'J.M. 스머커', country: '' },
   AIZ: { company: '어슈런트', country: '' },
   TAP: { company: '몰슨 쿠어스 베버리지', country: '' },
