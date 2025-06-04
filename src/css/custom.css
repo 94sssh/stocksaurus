@@ -21,6 +21,7 @@
   --ifm-link-hover-decoration: none;
   --ifm-table-stripe-background: transparent !important;
   --ifm-navbar-background-color: #fdfbf7;
+  --ifm-avatar-photo-size: 10rem;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -58,4 +59,14 @@ h3 {
 
 .footer {
   background-color: #242526;
+}
+
+.avatar > a {
+  align-content: center;
+}
+
+.avatar__photo {
+  --ifm-avatar-photo-size: 3.25rem !important;
+  height: auto;
+  border-radius: 0;
 }
