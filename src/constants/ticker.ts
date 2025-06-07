@@ -779,4 +779,5 @@ export const ticker: Record<string, { company: string; country: string }> = {
   TTAN: { company: '서비스타이탄', country: '' },
   CIEN: { company: '시에나', country: '' },
   CRWV: { company: '코어위브', country: '' },
+  CRCL: { company: '서클 인터넷', country: '' },
 };
