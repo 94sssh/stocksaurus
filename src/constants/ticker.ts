@@ -467,7 +467,7 @@ export const ticker: Record<string, { company: string; country: string }> = {
   NTAP: { company: '넷앱', country: '' },
   PPL: { company: 'PPL', country: '' },
   LYB: { company: '라이온델바젤 인더스트리스', country: 'GB' },
-  WBD: { company: '워너 브로스 디스커버리', country: '' },
+  WBD: { company: '워너 브라더스 디스커버리', country: '' },
   BIDU: { company: '바이두', country: 'CN' },
   TROW: { company: '티 로웨 프라이스 그룹', country: '' },
   WAT: { company: '워터스', country: '' },
