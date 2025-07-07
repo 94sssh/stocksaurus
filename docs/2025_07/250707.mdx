@@ -1,0 +1,102 @@
+---
+title: 미국 증시 요약 250707
+sidebar_position: -4
+slug: 7
+---
+
+## 주요 뉴스 요약
+
+![s&p500_250707](/map/250707.png)
+
+### 1. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-retreat-as-trump-reignites-trade-tensions-with-flurry-of-letters-august-deadline-200015302.html)
+
+### 2. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/world/china/leaders-growing-brics-group-gather-rio-summit-2025-07-06/)
+
+### 3. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/legal/government/us-secs-guidance-is-first-step-toward-rules-governing-crypto-etfs-2025-07-07/)
+
+### 4. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/retail-consumer/amazon-prime-day-set-lift-us-online-sales-238-billion-adobe-estimates-2025-07-07/)
+
+### 5. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/legal/transactional/coreweave-acquire-crypto-miner-core-scientific-2025-07-07/)
+
+### 6. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/autos-transportation/tesla-short-sellers-set-pocket-about-14-billion-profits-after-stock-slump-2025-07-07/)
+
+### 7. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/sustainability/boards-policy-regulation/apple-takes-fight-against-587-million-eu-antitrust-fine-court-2025-07-07/)
+
+### 8. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/samsung-elec-estimates-56-drop-q2-operating-profit-missing-expectations-2025-07-07/)
+
+## 주요 변화
+
+export const stockData = [
+  { ticker: 'TSLA', rate: -6.79 },
+  { ticker: 'AMZN', rate: 0.03 },
+  { ticker: 'NVDA', rate: -0.69 },
+  { ticker: 'AAPL', rate: -1.69 },
+  { ticker: 'CORZ', rate: -17.61 },
+  { ticker: 'CRWV', rate: -3.33 },
+  { ticker: 'MSFT', rate: -0.22 },
+  { ticker: 'GOOGL', rate: -1.53 },
+  { ticker: 'PLTR', rate: 3.54 },
+  { ticker: 'ORCL', rate: -2.13 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
+
+## 주요 지수 요약
+
+> 미국 증시
+
+- **Nasdaq** : 20,412.52 (-0.92%)
+- **S&P 500** : 6,229.98 (-0.79%)
+- **Dow 30** : 44,406.36 (-0.94%)
+- **Russel 2000** : 2,215.72 (-1.48%)
+
+> 채권
+
+- **미국 10년물 채권 금리** : 4.382 (-0.30%)
+- **미국 2년물 채권 금리** : 3.897 (-0.15%)
+- **미국 장단기 금리차(T10Y2Y)** : 0.50
+
+> 금
+
+- **금** : 3,345.81 (+0.09%)
+
+> 달러
+
+- **달러 지수** : 97.52 (+0.35%)
+
+> 원유/원자재
+
+- **WTI 유가** : 67.79 (-0.21%)
+- **천연 가스** : 3.406 (-0.18%)
+
+> 공포/탐욕
+
+<FearAndGreed fearAndGreedIndex={75} vix={17.79} vixRate={1.77} />
+
+## 다가오는 주요 경제 일정 (250708)
+
+export const nextEventsData = [['API 주간 원유 재고', '🟩', '', '', '0.680M']];
+
+<EconomicCalendar data={nextEventsData} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
