@@ -1,0 +1,109 @@
+---
+title: 미국 증시 요약 250708
+sidebar_position: -5
+slug: 8
+---
+
+## 주요 뉴스 요약
+
+![s&p500_250708](/map/250708.png)
+
+### 1. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-slip-as-trump-stays-firm-on-august-tariff-deadline-announces-copper-duties-200133528.html)
+
+### 2. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/trump-unveils-a-50-tariff-on-copper-and-threatens-to-impose-200-duties-on-pharmaceuticals-181231693.html)
+
+### 3. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/spacex-valuation-hit-around-400-184152092.html)
+
+### 4. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/meta-invests-3-5-billion-191357907.html)
+
+### 5. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/autos-transportation/honeywell-review-alternatives-two-businesses-ahead-2026-split-2025-07-08/)
+
+### 6. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/ibm-rolls-out-new-chips-servers-aims-simplified-ai-2025-07-08/)
+
+### 7. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/gold-etfs-drew-largest-inflow-five-years-during-first-half-2025-wgc-says-2025-07-08/)
+
+## 주요 변화
+
+export const stockData = [
+  { ticker: 'AMZN', rate: -1.84 },
+  { ticker: 'TSLA', rate: 1.32 },
+  { ticker: 'AAPL', rate: 0.03 },
+  { ticker: 'MSFT', rate: -0.22 },
+  { ticker: 'NVDA', rate: 1.11 },
+  { ticker: 'META', rate: 0.32 },
+  { ticker: 'BLK', rate: -0.09 },
+  { ticker: 'CRWV', rate: -5.17 },
+  { ticker: 'GOOGL', rate: -1.37 },
+  { ticker: 'UBER', rate: 0.83 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
+
+## 주요 지수 요약
+
+> 미국 증시
+
+- **Nasdaq** : 20,418.46 (+0.03%)
+- **S&P 500** : 6,225.52 (-0.07%)
+- **Dow 30** : 44,240.76 (-0.37%)
+- **Russel 2000** : 2,229.89 (+0.71%)
+
+> 채권
+
+- **미국 10년물 채권 금리** : 4.405 (-0.25%)
+- **미국 2년물 채권 금리** : 3.897 (-0.31%)
+- **미국 장단기 금리차(T10Y2Y)** : 0.52
+
+> 금
+
+- **금** : 3,311.55 (-0.16%)
+
+> 달러
+
+- **달러 지수** : 97.51 (+0.03%)
+
+> 원유/원자재
+
+- **WTI 유가** : 68.14 (-0.28%)
+- **천연가스** : 3.349 (-0.06%)
+
+> 공포/탐욕
+
+<FearAndGreed fearAndGreedIndex={74} vix={16.81} vixRate={-5.51} />
+
+## 지난 주요 경제 일정
+
+export const eventsData = [
+  ['API 주간 원유 재고', '🟩', '7.100M', '-2.800M', '0.680M'],
+];
+
+<EconomicCalendar data={eventsData} />
+
+## 다가오는 주요 경제 일정 (250709)
+
+export const nextEventsData = [
+  ['EIA 원유재고', '🟥', '', '', '3.845M'],
+  ['FOMC 회의록', '🟥', '', '', ''],
+];
+
+<EconomicCalendar data={nextEventsData} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
