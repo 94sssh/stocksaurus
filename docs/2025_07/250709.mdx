@@ -1,0 +1,138 @@
+---
+title: 미국 증시 요약 250709
+sidebar_position: -6
+slug: 9
+---
+
+## 주요 뉴스 요약
+
+![s&p500_250709](/map/250709.png)
+
+### 1. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-jump-as-nvidias-surge-to-milestone-boosts-tech-200132610.html)
+
+### 2. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/autos-transportation/how-us-buyers-critical-minerals-bypass-chinas-export-ban-2025-07-09/)
+
+### 3. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/world/china/nvidia-becomes-first-company-clinch-4-trillion-market-value-2025-07-09/)
+
+### 4. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/media-telecom/arm-estimates-14-fold-increase-data-center-customers-since-2021-company-says-2025-07-09/)
+
+### 5. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/finance/global-banks-predicted-get-10-trading-revenue-boost-tariff-turmoil-2025-07-09/)
+
+### 6. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/sustainability/boards-policy-regulation/americas-largest-power-grid-is-struggling-meet-demand-ai-2025-07-09/)
+
+### 7. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/world/china/samsungs-bet-foldable-phones-faces-major-test-with-slimmer-new-model-2025-07-09/)
+
+### 8. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/autos-transportation/automakers-push-ev-sales-7500-us-tax-credit-is-set-end-2025-07-09/)
+
+### 9. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/healthcare-pharmaceuticals/merck-nears-10-billion-deal-respiratory-drugmaker-verona-ft-reports-2025-07-09/)
+
+### 10. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/media-telecom/openai-release-web-browser-challenge-google-chrome-2025-07-09/)
+
+### 11. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/world/africa/dollar-gains-against-yen-trumps-trade-war-intensifies-2025-07-09/)
+
+## 주요 변화
+
+export const stockData = [
+  { ticker: 'NVDA', rate: 1.8 },
+  { ticker: 'MSFT', rate: 1.39 },
+  { ticker: 'AAPL', rate: 0.54 },
+  { ticker: 'AMZN', rate: 1.45 },
+  { ticker: 'TSLA', rate: -0.65 },
+  { ticker: 'META', rate: 1.68 },
+  { ticker: 'MRK', rate: 2.88 },
+  { ticker: 'GOOG', rate: 1.43 },
+  { ticker: 'VRNA', rate: 20.62 },
+  { ticker: 'INTC', rate: -0.64 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
+
+## 주요 지수 요약
+
+> 미국 증시
+
+- **Nasdaq** : 20,611.34 (+0.95%)
+- **S&P 500** : 6,263.28 (+0.61%)
+- **Dow 30** : 44,458.30 (+0.49%)
+- **Russel 2000** : 2,252.27 (+1.06%)
+
+> 채권
+
+- **미국 10년물 국채 금리** : 4.335 (-0.12%)
+- **미국 2년물 국채 금리** : 3.849 (-0.34%)
+- **미국 장단기 금리차(T10Y2Y)** : 0.48
+
+> 금
+
+- **금** : 3,325.45 (+0.13%)
+
+> 달러
+
+- **달러 지수** : 97.47 (-0.05%)
+
+> 원유/원자재
+
+- **WTI 유가** : 68.16 (-0.32%)
+- **천연가스** : 3.198 (-0.31%)
+
+> 공포/탐욕
+
+<FearAndGreed fearAndGreedIndex={75} vix={15.94} vixRate={-5.18} />
+
+## 지난 주요 경제 일정
+
+export const eventsData = [
+  ['EIA 원유재고', '🟥', '7.070M', '-1.700M', '3.845M'],
+  ['FOMC 회의록', '🟥', '', '', ''],
+];
+
+<EconomicCalendar data={eventsData} />
+
+## 다가오는 주요 경제 일정 (250710)
+
+export const nextEventsData = [
+  ['연속 실업수당청구건수', '🟨', '', '', '1,964K'],
+  ['신규 실업수당청구건수', '🟨', '', '235K', '233K'],
+  ['30년물 국채 입찰', '🟨', '', '', '4.844%'],
+  ['연준 월러 이사 연설', '🟨', '', '', ''],
+  ['연준 데일리 총재 연설', '🟨', '', '', ''],
+  ['EIA 천연가스재고', '🟩', '', '', '55Bcf'],
+];
+
+<EconomicCalendar data={nextEventsData} />
+
+## 실적 발표 예정 (250710)
+
+export const stocksBMO = ['DAL', 'CAG'];
+
+export const stocksAMC = ['LEVI', 'VIST'];
+
+<EarningsBoard stocksBMO={stocksBMO} stocksAMC={stocksAMC} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
