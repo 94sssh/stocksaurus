@@ -1,0 +1,162 @@
+---
+title: 미국 증시 요약 250715
+sidebar_position: -10
+slug: 15
+---
+
+## 주요 뉴스 요약
+
+![s&p500_250715](/map/250715.png)
+
+### 1. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/live/stock-market-today-dow-slides-after-cpi-inflation-accelerates-nvidias-surge-lifts-nasdaq-to-record-200955051.html)
+
+### 2. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/world/us/feds-inflation-fears-may-start-be-realized-with-june-cpi-data-2025-07-15/)
+
+### 3. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/energy/blackstone-invest-25-bln-data-centers-natural-gas-plants-coo-says-2025-07-15/)
+
+### 4. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/coreweave-commits-6-billion-ai-data-center-pennsylvania-2025-07-15/)
+
+### 5. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/apple-invest-500-million-rare-earths-mine-operator-mp-materials-fox-business-2025-07-15/)
+
+### 6. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/autos-transportation/gm-outlines-4-billion-plan-expand-production-gas-trucks-suvs-2025-07-15/)
+
+### 7. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/sustainability/boards-policy-regulation/google-inks-3-billion-us-hydropower-deal-largest-clean-energy-agreement-its-kind-2025-07-15/)
+
+### 8. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/broadcom-launches-new-tomahawk-ultra-networking-chip-ai-battle-against-nvidia-2025-07-15/)
+
+### 9. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/finance/jpmorgans-profit-slips-prior-year-accounting-gain-skews-comparison-2025-07-15/)
+
+### 10. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/finance/wells-fargo-profit-rises-lower-bad-loan-provisions-2025-07-15/)
+
+### 11. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/blackrocks-second-quarter-profit-rises-market-momentum-2025-07-15/)
+
+### 12. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/finance/citigroup-profit-jumps-market-volatility-drives-trading-windfall-2025-07-15/)
+
+## 주요 변화
+
+export const stockData = [
+  { ticker: 'NVDA', rate: 4.04 },
+  { ticker: 'AAPL', rate: 0.23 },
+  { ticker: 'MSFT', rate: 0.56 },
+  { ticker: 'JPM', rate: -0.74 },
+  { ticker: 'TSLA', rate: -1.93 },
+  { ticker: 'MP', rate: 19.99 },
+  { ticker: 'WFC', rate: -5.48 },
+  { ticker: 'AMD', rate: 6.41 },
+  { ticker: 'BLK', rate: -5.88 },
+  { ticker: 'AMZN', rate: 0.29 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
+
+## 주요 지수 요약
+
+> 미국 증시
+
+- **Nasdaq** : 20,677.80 (+0.18%)
+- **S&P 500** : 6,243.71 (-0.40%)
+- **Dow 30** : 44,022.89 (-0.98%)
+- **Russel 2000** : 2,206.44 (-1.92%)
+
+> 채권
+
+- **미국 10년물 국채 금리** : 4.493 (+0.04%)
+- **미국 2년물 국채 금리** : 3.955 (-0.13%)
+- **미국 장단기 금리차(T10Y2Y)** : 0.55
+
+> 금
+
+- **금** : 3,332.87 (+0.07%)
+
+> 달러
+
+- **달러 지수** : 98.64 (+0.56%)
+
+> 원유/원자재
+
+- **WTI 유가** : 66.85 (+0.22%)
+- **천연가스** : 3.522 (+0.49%)
+
+> 공포 탐욕
+
+<FearAndGreed fearAndGreedIndex={74} vix={17.38} vixRate={1.05} />
+
+## 지난 주요 경제 일정
+
+export const eventsData = [
+  ['근원 소비자물가지수(Core CPI) (MoM) (6월)', '🟥', '0.2%', '0.3%', '0.1%'],
+  ['Core CPI YoY (인플레이션율) (6월)', '🟥', '2.9%', '3.0%', '2.8%'],
+  ['CPI YoY (인플레이션율)(6월)', '🟥', '2.7%', '2.6%', '2.4%'],
+  ['소비자물가지수(CPI) (MoM) (6월)', '🟥', '0.3%', '0.3%', '0.1%'],
+  ['뉴욕 엠파이어스테이트 제조업 지수', '🟨', '5.5', '-8.3', '-16.0'],
+  ['연준 보우먼 이사 연설', '🟨', '', '', ''],
+  ['연준 바 부의장 연설', '🟨', '', '', ''],
+  ['연준 콜린스 총재 연설', '🟨', '', '', ''],
+  ['연준 로건 총재 연설', '🟨', '', '', ''],
+  ['API 주간 원유 재고', '🟩', '19.100M', '-2.000M', '7.100M'],
+];
+
+<EconomicCalendar data={eventsData} />
+
+## 다가오는 주요 경제 일정 (250716)
+
+export const nextEventsData = [
+  ['근원 생산자물가지수(Core PPI) MoM (6월)', '🟥', '', '0.2%', '0.1%'],
+  ['생산자물가지수(PPI) MoM (6월)', '🟥', '', '0.3%', '0.1%'],
+  ['EIA 원유재고', '🟥', '', '', '7.070M'],
+  ['연준 해맥 총재 연설', '🟨', '', '', ''],
+  ['산업생산 (YoY) (6월)', '🟨', '', '', '0.60%'],
+  ['산업생산 (MoM) (6월)', '🟨', '', '0.1%', '-0.2%'],
+  ['연준 바 부의장 연설', '🟨', '', '', ''],
+  ['연준 윌리엄스 총재 연설', '🟨', '', '', ''],
+];
+
+<EconomicCalendar data={nextEventsData} />
+
+## 실적 발표 예정 (250716)
+
+export const stocksBMO = [
+  'JNJ',
+  'BAC',
+  'ASML',
+  'MS',
+  'GS',
+  'PGR',
+  'PLD',
+  'PNC',
+  'MTB',
+];
+
+export const stocksAMC = ['KMI', 'UAL'];
+
+<EarningsBoard stocksBMO={stocksBMO} stocksAMC={stocksAMC} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
