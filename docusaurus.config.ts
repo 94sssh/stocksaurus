@@ -43,6 +43,7 @@ const config: Config = {
          * *DO NOT* include a trailing slash.
          */
         routeBasePath: 'insight',
+        blogSidebarCount: 'ALL',
         /**
          * Path to data on filesystem relative to site dir.
          */
