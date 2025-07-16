@@ -71,14 +71,14 @@ h3 {
   border-radius: 0;
 }
 
-.title_f1Hy {
+article > header > h1,
+article > header > h2 {
   font-size: 2rem !important;
-
-  @media screen and (max-width: 996px) {
-    font-size: 1.5rem !important;
-  }
 }
 
-.img_ev3q {
-  max-height: 20rem;
+@media screen and (max-width: 996px) {
+  article > header > h1,
+  article > header > h2 {
+    font-size: 1.5rem !important;
+  }
 }
