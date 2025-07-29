@@ -1,0 +1,215 @@
+---
+title: 미국 증시 요약 250729
+sidebar_position: -20
+slug: 29
+---
+
+## 주요 뉴스 요약
+
+![s&p500_250729](/map/250729.png)
+
+### 1. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/live/stock-market-today-sp-500-snaps-6-day-record-streak-stocks-fall-as-earnings-flood-in-fed-decision-looms-200412403.html)
+
+### 2. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/no-tariff-pause-announced-after-us-china-talks-with-trump-set-to-make-the-final-call-174834648.html)
+
+### 3. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/blackstone-executive-wesley-lepatner-among-4-killed-in-shooting-at-firms-nyc-office-131102017.html)
+
+### 4. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/metas-year-bold-superintelligence-bets-unlikely-pump-profits-2025-07-29/)
+
+### 5. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/procter-gamble-hikes-us-prices-amid-tariff-challenges-ceo-change-2025-07-29/)
+
+### 6. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/healthcare-pharmaceuticals/unitedhealth-signals-prolonged-pain-restored-profit-forecast-underwhelms-2025-07-29/)
+
+### 7. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/healthcare-pharmaceuticals/astrazeneca-seeks-us-drug-price-cuts-amid-expansion-plans-strong-demand-2025-07-29/)
+
+### 8. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/world-at-work/merck-cut-jobs-costs-demand-gardasil-china-remains-weak-2025-07-29/)
+
+### 9. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/aerospace-defense/boeings-losses-shrink-jet-deliveries-rebound-2025-07-29/)
+
+### 10. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/retail-consumer/spotify-forecasts-profit-below-estimates-higher-taxes-shares-sink-2025-07-29/)
+
+### 11. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/paypal-lifts-2025-profit-forecast-above-estimates-turnaround-picks-up-pace-2025-07-29/)
+
+### 12. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/visa-third-quarter-profit-rises-201105861.html)
+
+### 13. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/booking-holdings-posts-upbeat-quarterly-results-strong-international-bookings-2025-07-29/)
+
+### 14. **제목제목**
+
+내용내용 [[원문]](https://finance.yahoo.com/news/starbucks-stock-pops-us-same-store-sales-fall-less-than-feared-as-new-ceo-brian-niccol-continues-turnaround-202028572.html)
+
+### 15. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/retail-consumer/mondelez-beats-second-quarter-revenue-estimates-strong-international-demand-2025-07-29/)
+
+### 16. **제목제목**
+
+내용내용 [[원문]](https://www.reuters.com/business/seagate-forecasts-first-quarter-revenue-profit-below-estimates-shares-slump-2025-07-29/)
+
+## 주요 변화
+
+export const stockData = [
+  { ticker: 'BA', rate: -4.37 },
+  { ticker: 'MSFT', rate: 0.01 },
+  { ticker: 'NVDA', rate: -0.7 },
+  { ticker: 'AAPL', rate: -1.3 },
+  { ticker: 'UNH', rate: -7.46 },
+  { ticker: 'NSC', rate: -3.04 },
+  { ticker: 'SPOT', rate: -11.55 },
+  { ticker: 'UNP', rate: -2.39 },
+  { ticker: 'AMZN', rate: -0.76 },
+  { ticker: 'GOOGL', rate: 1.65 },
+];
+
+{stockData.map(({ticker, rate}) => <StockCardMini key={ticker} ticker={ticker} rate={rate}></StockCardMini>)}
+
+## 주요 지수 요약
+
+> 미국 증시
+
+- **Nasdaq** : 21,098.29 (-0.38%)
+- **S&P 500** : 6,370.89 (-0.30%)
+- **Dow 30** : 44,632.99 (-0.46%)
+- **Russel 2000** : 2,244.30 (-0.55%)
+
+> 채권
+
+- **미국 10년물 국채 금리** : 4.318 (-2.79%)
+- **미국 2년물 국채 금리** : 3.869 (-1.35%)
+- **미국 장단기 금리차(T10Y2Y)** : 0.48
+
+> 금
+
+- **금** : 3,383.00 (+0.48%)
+
+> 달러
+
+- **달러 지수** : 98.91 (+0.28%)
+
+> 원유/원자재
+
+- **WTI 원유** : 69.26 (+3.82%)
+- **천연가스** : 3.162 (+3.13%)
+
+> 공포 탐욕
+
+<FearAndGreed fearAndGreedIndex={69} vix={15.98} vixRate={6.32} />
+
+## 지난 주요 경제 일정
+
+export const eventsData = [
+  ['CB 소비자신뢰지수', '🟥', '97.2', '95.9', '95.2'],
+  ['JOLTs 구인 이직 보고서', '🟥', '7.437M', '7.510M', '7.712M'],
+  ['상품 무역수지 (6월)', '🟨', '-85.99B', '-98.3B', '-96.59B'],
+  ['소매 재고(자동차 제외) (6월)', '🟨', '0.0%', '', '0.1%'],
+  ['주택가격지수 (MoM) (5월)', '🟨', '0.4%', '', '0.8%'],
+  ['API 주간 원유 재고', '🟩', '1.539M', '-2.500M', '-0.577M'],
+];
+
+<EconomicCalendar data={eventsData} />
+
+## 다가오는 주요 경제 일정 (250730)
+
+export const nextEventsData = [
+  ['ADP 비농업 고용변화', '🟥', '', '77K', '-33K'],
+  ['GDP 성장률 (QoQ) (2분기)', '🟥', '', '2.4%', '-0.5%'],
+  ['EIA 원유재고', '🟥', '', '-2.500M', '-3.169M'],
+  ['FOMC 경제 전망', '🟥', '', '', ''],
+  ['연준 금리 결정', '🟥', '', '4.50%', '4.50%'],
+  ['연준 기자회견', '🟥', '', '', ''],
+  ['근원 PCE (2분기)', '🟨', '', '2.4%', '3.5%'],
+  ['잠정 주택 매매 (MoM) (6월)', '🟨', '', '0.3%', '1.8%'],
+];
+
+<EconomicCalendar data={nextEventsData} />
+
+## 실적 발표 예정 (250730)
+
+export const stocksBMO = [
+  'HSBC',
+  'ADP',
+  'TT',
+  'MO',
+  'ITW',
+  'AEP',
+  'HES',
+  'GRMN',
+  'VRSK',
+  'ETR',
+  'HSY',
+  'GEHC',
+  'ODFL',
+  'WEC',
+  'KHC',
+  'HUM',
+  'SW',
+  'FTV',
+  'BG',
+];
+
+export const stocksAMC = [
+  'MSFT',
+  'META',
+  'QCOM',
+  'ARM',
+  'LRCX',
+  'BN',
+  'EQIX',
+  'ALL',
+  'PSA',
+  'F',
+  'CTSH',
+  'EBAY',
+  'FICO',
+  'PRU',
+  'VICI',
+  'DXCM',
+  'EXR',
+  'VTR',
+  'AVB',
+  'AWK',
+  'PTC',
+  'FE',
+  'WDC',
+  'TYL',
+  'INVH',
+  'MAA',
+  'FFIV',
+  'ALGN',
+  'HOLX',
+  'MGM',
+];
+
+<EarningsBoard stocksBMO={stocksBMO} stocksAMC={stocksAMC} />
+
+:::info
+
+모든 내용의 출처는 Yahoo Finance, Reuters, Bloomberg, CNBC, Investing.com, Finviz, CNN입니다.
+
+:::
