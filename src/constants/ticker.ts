@@ -111,7 +111,7 @@ export const ticker: Record<string, { company: string; country: string }> = {
   GILD: { company: '길리어드 사이언스', country: '' },
   APP: { company: '앱플로빈', country: '' },
   SPOT: { company: '스포티파이', country: 'LU' },
-  PANW: { company: '팰로 앨토 네트웍스', country: '' },
+  PANW: { company: '팔로알토 네트웍스', country: '' },
   BMY: { company: '브리스톨 마이어스 스퀴브', country: '' },
   MDT: { company: '메드트로닉', country: 'IE' },
   PLD: { company: '프로로지스', country: '' },
